@@ -1,0 +1,43 @@
+{{#extends 'base'}}
+
+    {{#block 'content'}}
+        <form method="POST">
+            <div>
+                <label class="form-label">Name:</label>
+                <input type="text" name="name" class="form-control" />
+            </div>
+            <div>
+                <labe class="form-label"l>Calories:</label>
+                <input type="text" name="calories" class="form-control"/>
+            </div>
+            <div>
+                <label class="form-label">Meal:</label>
+                <select name="meal" class="form-control">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack/Supper</option>
+                </select>
+            </div>
+            <div>
+                <label class="form-label">Date:</label>
+                <input class="form-control" type="date" name="date"/>
+            </div>
+
+            <div>
+                <label class="form-label">Tags:</label>
+                <div>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="unhealthy"><label class="form-check-label">Unhealthy</label>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="oily"><label class="form-check-label">Oily</label>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="delicious"><label class="form-check-label">Delicious</label>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="vegan"><label class="form-check-label">Vegan</label>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="gluten-free"><label class="form-check-label">Gluten Free</label>
+                    <input class="form-check-input mr-3" name="tags" type="checkbox" value="impossible-meat"><label class="form-check-label">Impossible Meat</label>
+                </div>
+            </div>
+
+            <input type="submit"/>
+        <form>
+    {{/block}}
+
+{{/extends}}
